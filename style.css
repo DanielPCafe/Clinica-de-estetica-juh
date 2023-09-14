@@ -26,11 +26,20 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    transition: 2s;
+}
+
+header.rolagem {
+    background-color: #000000;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: #fff;
 }
 
 header ul {
     list-style-type: none;
-
 }
 
 header ul li {
@@ -41,15 +50,16 @@ header ul li {
 header ul li a {
     color: white;
     text-decoration: none;
-
+    font-size: 22px;
 }
 
 .btn-contato button{
     width: 120px;
     height: 40px;
     border: 0;
-    background-color: pink;
-    color: aliceblue;
+    background: linear-gradient(rgb(186, 160, 123) 0%, rgb(186, 160, 123) 51%, rgb(235, 214, 170) 100%);
+    color: #fff;
+    border-color: #fff;
     cursor: pointer;
     transition: .2s;
     border-radius: 5px;
@@ -58,8 +68,194 @@ header ul li a {
 
 .banner {
     height: 100vh;
-    background-image: url(img/juh.jpg);
+    background-image: url(img/juh2.jpg);
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
+
+.banner2 {
+    height: 100vh;
+    background-image: url(img/banner2.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 140px;
+}
+
+.banner3 {
+    height: 100vh;
+    background-image: url(img/08.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.banner4 {
+    height: 100vh;
+    background-image: url(img/09.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.banner5 {
+    height: 100vh;
+    background-image: url(img/10.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.banner6 {
+    height: 100vh;
+    background-image: url(img/11.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.banner7 {
+    height: 100vh;
+    background-image: url(img/07.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 140px;
+}
+
+.slider {
+    margin: 30px auto;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: #fff;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background-color: #fff;
+}
+
+.whats {
+position: fixed; bottom: 10px; right: 10px; z-index: 9999;}
